@@ -1,0 +1,7 @@
+{
+  "name": "ip-ranges",
+  "version": "1.0.0",
+  "dependencies": {
+    "writ": "git@github.com:programble/writ.git#v1.0.2"
+  }
+}
