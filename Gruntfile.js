@@ -6,18 +6,6 @@ module.exports = function (grunt) {
       main: {
         files: [
           {
-            src: 'index.html',
-            dest: 'dist/index.html'
-          },
-          {
-            src: 'CNAME',
-            dest: 'dist/CNAME'
-          }
-        ]
-      },
-      assets: {
-        files: [
-          {
             expand: true,
             cwd: 'assets/',
             src: ['**', '!styles/**'],
@@ -42,7 +30,8 @@ module.exports = function (grunt) {
         livereload: true
       },
       html: {
-        files: ['index.html'],
+        cwd: 'assets/',
+        files: ['**'],
         tasks: ['copy:main']
       },
       bower_components: {

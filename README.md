@@ -1,6 +1,6 @@
 #IP Ranges
 
-Lists of IP ranges for popular hosting providers, based on (Hans Wolff's)[https://github.com/hanswolff] excellent [ipranges](https://github.com/hanswolff/ipranges) library.
+Lists of IP ranges for popular hosting providers, based on [Hans Wolff's](https://github.com/hanswolff) excellent [ipranges](https://github.com/hanswolff/ipranges) library.
 
 **Note:** THERE IS NO GUARANTEE THAT THE PROVIDED IP RANGES ARE ACCURATE! PLEASE READ THE "LICENSE" FILE!
 
@@ -26,6 +26,6 @@ To clean build:
 
     $ npm run clean
 
-To deploy, [set-up a Divshot](http://docs.divshot.com/guides/getting-started) and run:
+To deploy run:
 
     $ npm run deploy

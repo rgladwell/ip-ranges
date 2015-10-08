@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Network Microdata Schema</title>
+
+  <link href="../vendor/writ/writ.min.css" rel="stylesheet" type="text/css" async />
+</head>
+
+<body>
+
+  <main role="main" id="network">
+    <header>
+      <h1>Networks Microdata Schema</h1>
+      <p>Microdata schema for describing a network and it's IP ranges.</p>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Expected Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>name</td>
+          <td><a href="https://schema.org/Text">Text</a></td>
+          <td>The name of the network.</td>
+        </tr>
+        <tr>
+          <td>sub-networks</td>
+          <td><a href="#network">Network</a></td>
+          <td>A network can be composed of many sub-networks.</td>
+        </tr>
+        <tr>
+          <td>ranges</td>
+          <td><a href="#address-range">Address Range</a></td>
+          <td>A network has many address ranges identifying addresses that belong to it.</td>
+        </tr>
+        <tr>
+          <td>source</td>
+          <td><a href="https://schema.org/URL">URL</a></td>
+          <td>The network location of the resource used to source the IP range information in this network.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="address-range">Address Range</h3>
+
+    <p>Microdata schema for describing a sub-network of IP ranges.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Expected Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>id</td>
+          <td><a href="https://schema.org/Text">Text</a></td>
+          <td>Optional unique identifier of the sub-network.</td>
+        </tr>
+        <tr>
+          <td>cidr</td>
+          <td><a href="https://schema.org/Text">Text</a></td>
+          <td>An optional <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">CIDR notation</a> representing an IP range. You MUST specify only one <code>cidr</code> or <code>from</code> property. The <code>cidr</code> text MUST be a wellformed IPv4 or IPv6 CIDR notation.</td>
+        </tr>
+        <tr>
+          <td>from</td>
+          <td><a href="https://schema.org/Text">Text</a></td>
+          <td>An optional IP number representing the lower bound of IP addresses contained in this IP range. You MUST specify only one <code>cidr</code> or <code>from</code> property. If you specify the <code>from</code> property you MUST also specify a <code>to</code> property. The <code>from</code> text MUST be a wellformed IPv4 or IPv6 address.</td>
+        </tr>
+        <tr>
+          <td>to</td>
+          <td><a href="https://schema.org/Text">Text</a></td>
+          <td>An optional IP number representing the upper bound of IP addresses contained in this sub-network. If you specify the <code>to</code> property you MUST also specify a <code>from</code> property. The <code>to</code> text MUST be a wellformed IPv4 or IPv6 address.</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+</body>
+
+</html>
