@@ -27,7 +27,7 @@ module.exports = function (grunt) {
 
     watch: {
       options: {
-        livereload: true
+        livereload: 35730
       },
       html: {
         cwd: 'assets/',
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
     connect: {
       server: {
         options: {
-          port: 8000,
+          port: 8001,
           base: 'dist',
           hostname: 'localhost',
           livereload: true
