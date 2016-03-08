@@ -33,10 +33,6 @@ module.exports = function (grunt) {
         cwd: 'assets/',
         files: ['**'],
         tasks: ['copy:main']
-      },
-      bower_components: {
-        files: ['bower_components/**'],
-        tasks: ['copy:bower_components']
       }
     },
 
