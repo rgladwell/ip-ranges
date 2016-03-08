@@ -18,7 +18,7 @@ To build execute:
 
 To test:
 
-    $ npm run server
+    $ npm start
 
 And open http://localhost:8000 in your browser.
 

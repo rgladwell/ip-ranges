@@ -18,6 +18,6 @@
     "watch": "grunt watch",
     "deploy": "grunt deploy",
     "clean": "grunt clean",
-    "server": "grunt run"
+    "start": "grunt run"
   }
 }
