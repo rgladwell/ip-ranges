@@ -19,18 +19,82 @@
     </header>
 
     <ul>
+      <li><a href="#cloudflare">CloudFlare</a></li>
       <li><a href="#digitalocean">Digital Ocean</a></li>
     </ul>
+
+    <article itemscope itemtype="https://ip-ranges.is-hosted-by.com/schemas/network.html" id="cloudflare">
+      <h2 itemprop="name">CloudFlare</h2>
+
+      <p>Regions:</p>
+
+      <ul>
+        <li><a href="#digitalocean-usa">New York/San Francisco</a></li>
+      </ul>
+
+      <section itemscope itemprop="sub-networks" id="cloudflare-usa">
+        <h3 itemprop="name">New York/San Francisco</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>IP Address From</th>
+              <th>IP Address To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="from">199.27.128.0</td>
+              <td itemprop="to">199.27.135.255</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="from">173.245.48.0</td>
+              <td itemprop="to">173.245.63.255</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="from">2606:4700::</td>
+              <td itemprop="to">2606:4700:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="from">108.162.192.0</td>
+              <td itemprop="to">108.162.255.255</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="from">198.41.128.0</td>
+              <td itemprop="to">198.41.255.255</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="from">104.16.0.0</td>
+              <td itemprop="to">104.31.255.255</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="from">172.64.0.0</td>
+              <td itemprop="to">172.71.255.255</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="from">162.158.0.0</td>
+              <td itemprop="to">162.159.255.255</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <footer>
+          <a itemprop="source" href="https://whois.arin.net/rest/org/CLOUD14/nets">Source</a>
+        </footer>
+
+      </section>
+    </article>
 
     <article itemscope itemtype="https://ip-ranges.is-hosted-by.com/schemas/network.html" id="digitalocean">
       <h2 itemprop="name">Digital Ocean</h2>
 
       <p>Regions:</p>
 
-      <ul itemprop="sub-networks">
+      <ul>
         <li><a href="#digitalocean-usa">New York/San Francisco</a></li>
         <li><a href="#digitalocean-amsterdam">Amsterdam</a></li>
         <li><a href="#digitalocean-london">London</a></li>
+        <li><a href="#digitalocean-france">France</a></li>
       </ul>
 
       <section itemscope itemprop="sub-networks" id="digitalocean-usa">
@@ -234,6 +298,12 @@
               <td itemprop="cidr">128.199.64.0/18</td>
             </tr>
             <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">128.199.64.0/19</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">128.199.96.0/19</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
               <td itemprop="cidr">128.199.128.0/18</td>
             </tr>
             <tr itemprop="ranges" itemscope>
@@ -249,22 +319,63 @@
               <td itemprop="cidr">178.62.0.0/18</td>
             </tr>
             <tr itemprop="ranges" itemscope>
-              <td itemprop="cidr">178.62.32.0/19</td>
-            </tr>
-            <tr itemprop="ranges" itemscope>
               <td itemprop="cidr">178.62.64.0/18</td>
             </tr>
             <tr itemprop="ranges" itemscope>
               <td itemprop="cidr">178.62.96.0/19</td>
             </tr>
             <tr itemprop="ranges" itemscope>
-              <td itemprop="cidr">2a03:b0c0:0001::/48</td>
+              <td itemprop="cidr">2a03:b0c0:1::/48</td>
             </tr>
           </tbody>
         </table>
 
         <footer>
           <a itemprop="source" href="http://bgp.he.net/search?search%5Bsearch%5D=EU-DIGITALOCEAN&commit=Search">Source</a>
+        </footer>
+
+      </section>
+
+      <section itemscope itemprop="sub-networks"  id="digitalocean-france">
+
+        <h3 itemprop="name">France</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>IP Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">5.101.111.0/24</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">46.101.0.0/18</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">46.101.64.0/22</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">46.101.72.0/21</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">46.101.80.0/20</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">188.166.136.0/22</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">188.166.144.0/20</td>
+            </tr>
+            <tr itemprop="ranges" itemscope>
+              <td itemprop="cidr">188.166.168.0/21</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <footer>
+          <a itemprop="source" href="http://bgp.he.net/AS202109#_prefixes">Source</a>
         </footer>
 
       </section>
